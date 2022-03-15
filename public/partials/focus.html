@@ -1,0 +1,13 @@
+<h2>Keyboard-focusable</h2>
+
+<h3>Content with tabindex=&quot;0&quot;</h3>
+<p tabindex="0">I don't know why this text can receive keyboard focus.</p>
+
+<h3>Content with with tabindex=&quot;-1&quot;</h3>
+<p><a href="#" tabindex="-1">Log in</a></p>
+
+<h3>Pseudo-button - Not keyboard-focusable</h3>
+<div class="pseudobutton" onclick="submitForm();">Search</div>
+	
+<h3>Pseudo button - Keyboard-focusable</h3>
+<div class="pseudobutton" onclick="submitForm();" tabindex="0">Search</div>

@@ -1,0 +1,63 @@
+<h2> Name and Description</h2>
+
+<h3>Image alternative text</h3>
+<p><img src="img/html-5.png" width="auto" height="100" alt="Use HTML to prototype with web accessibility in mind" /></p>
+
+<h3>Label</h3>
+<p><label for="search25">Search this site</label>
+    <input type="text" name="query" id="search25"></p>
+
+<h3>Hidden label</h3>
+<p><label for="search26" style="display: none">Search this site</label>
+    <input type="text" name="query" id="search26"></p>
+
+<h3>Visually-hidden label</h3>
+<p><label for="search27" class="sr-only">Search this site</label>
+    <input type="text" name="query" id="search27">
+</p>
+
+<h3>Title attribute </h3>
+<p><input type="text" title="Search this site"></p>
+
+<h3>Placeholder</h3>
+<p><input type="text" placeholder="Search this site"></p>
+
+<h3>aria-labelledby</h3>
+<p><label for="search28" id="searchlabel">Search this site</label>
+    <input type="text" id="search28" aria-labelledby="searchlabel">
+</p>
+
+<h3>aria-label</h3>
+<p><label>Search this site <input type="text" aria-label="Search terms"></label></p>
+
+<h3>aria-labelledby using multiple labels.</h3>
+<table>
+    <tr>
+        <th scope="col">Name</th>
+        <th id="officenum" scope="col">Office #</th>
+        <th id="phonelabel" scope="col">Phone</th>
+    </tr>
+    <tr>
+        <th id="cyndi" scope="row">Cyndi</th>
+        <td><input type="text" size="4" name="office1" aria-labelledby="cyndi officenum"></td>
+        <td><input type="text" size="12" name="phone1" aria-labelledby="cyndi phonelabel"></td>
+    </tr>
+    <tr>
+        <th id="jared" scope="row">Jared</th>
+        <td><input type="text" size="4" name="office2" aria-labelledby="jared officenum"></td>
+        <td><input type="text" size="12" name="phone2" aria-labelledby="jared phonelabel"></td>
+    </tr>
+    <tr>
+        <th id="jon" scope="row">Jonathan</th>
+        <td><input type="text" size="4" name="office3" aria-labelledby="jon officenum"></td>
+        <td><input type="text" size="12" name="phone3" aria-labelledby="jon phonelabel"></td>
+    </tr>
+</table>
+
+<h3>aria-describedby</h3>
+<p><label for="username">Username:</label>
+    <input type="text" id="username" aria-describedby="usernamedetails"></p>
+<p id="usernamedetails"><i>Username must meet <a href="#">these requirements</a></i></p>
+
+<h3>Unnecessary title attribute</h3>
+<p><a href="#" alt="Next" title="Go to the next page"><img src="img/css-3.png" width="auto" height="100" alt="" /></a></p>

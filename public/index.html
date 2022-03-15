@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UKG Pro - Diversity Dashboard</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <style>
+        .flex-container {
+            display: flex;
+            height: 100%;
+            gap: 4px;
+            flex-direction: row;
+        }
+
+        .wide {
+            flex: 1 1 auto;
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+            align-self: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header role="banner">
+        <pre>&lt;header role="banner"&gt;</pre>
+        <h1>Banner</h1>
+        <nav role="navigation" w3-include-HTML="partials/nav.html"></nav>
+        <section role="search" w3-include-HTML="partials/search.html"> </section>
+    </header>
+    <main role="main">
+        <pre>&lt;main role="main"&gt;</pre>
+        <h1>Main - Page Name - h1</h1>
+        <div class="flex-container">
+            <section role="region" class="main">
+                <pre>&lt;section role="region"&gt;</pre>
+                <h2>Main Content - h2</h2>
+                <p>Nostrud nisi laboris veniam proident do ad consectetur ex ipsum nostrud irure sint. Adipisicing
+                    adipisicing commodo laboris ad tempor aliquip adipisicing in do occaecat in laboris occaecat eu. Eu
+                    do sint sunt excepteur labore. Veniam eu anim amet deserunt magna ea sint.</p>
+                <!-- <section role="search" w3-include-HTML="partials/form-names.html"> </section> -->
+
+            </section>
+            <aside role="complementary" class="complementary">
+                <pre>&lt;aside role="complementary"&gt;</pre>
+                <h3>Complementary - h3</h3>
+                <nav role="navigation" w3-include-HTML="partials/nav-list.html"></nav>
+            </aside>
+
+        </div>
+    </main>
+    <footer role="contentinfo">
+        <pre>&lt;footer role="contentinfo"&gt;</pre>
+        <h1>Footer</h1>
+        <nav role="navigation" w3-include-HTML="partials/nav.html"></nav>
+    </footer>
+    <script src="js/w3-include.js"></script>
+</body>
+
+</html>

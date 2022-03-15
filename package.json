@@ -1,0 +1,13 @@
+{
+  "name": "html-boilerplate",
+  "version": "1.0.0",
+  "description": "a blank slate for a static webpage",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server public"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}

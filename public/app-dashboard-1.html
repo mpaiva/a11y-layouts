@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Put your title here</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <style>
+        .flex-container {
+            display: flex;
+            height: 100%;
+            gap: 4px;
+            flex-direction: row;
+        }
+
+        .flex-container>.item {
+            background: #ffecb3;
+            border: 3px solid #ffcc80;
+            border-radius: 4px;
+        }
+
+        .wide {
+            /* flex:1 1 auto; */
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-self: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header role="banner">
+        <pre>&ltheader role="banner"&gt;</pre>
+        <h1>Banner</h1>
+        <nav role="navigation">
+            <pre>&ltnav role="navigation"&gt;</pre>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+
+        </nav>
+        <section role="search">
+            <pre>&ltsection role="search"&gt;</pre>
+            <label>
+                search <input placeholder="search">
+            </label>
+        </section>
+    </header>
+    <main role="main">
+        <pre>&ltmain role="main"&gt;</pre>
+        <h1>Main - Page Name</h1>
+        <div class="flex-container">
+            <section role="region" class="item wide">
+                <pre>&ltsection role="region"&gt;</pre>
+                <h2>Main Content</h2>
+                <p>Nostrud nisi laboris veniam proident do ad consectetur ex ipsum nostrud irure sint. Adipisicing
+                    adipisicing commodo laboris ad tempor aliquip adipisicing in do occaecat in laboris occaecat eu. Eu
+                    do sint sunt excepteur labore. Veniam eu anim amet deserunt magna ea sint.</p>
+
+            </section>
+            <aside role="complementary" class="item">
+                <pre>&ltaside role="complementary"&gt;</pre>
+                <h3>Complementary</h3>
+                <ul>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer role="contentinfo">
+        <pre>&ltfooter role="contentinfo"&gt;</pre>
+        <h1>Footer</h1>
+        <nav role="navigation">
+            <pre>&ltnav role="navigation"&gt;</pre>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+
+        </nav>
+    </footer>
+</body>
+
+</html>
